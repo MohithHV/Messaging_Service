@@ -1,0 +1,19 @@
+{
+  "name": "ws-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "mysql2": "^3.11.3",
+    "sentiment": "^5.0.2",
+    "typescript": "^5.6.3",
+    "ws": "^8.18.0"
+  }
+}

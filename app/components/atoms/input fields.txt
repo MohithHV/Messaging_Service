@@ -1,0 +1,5 @@
+<input type="text" id="username" placeholder="Username" />
+<input type="password" id="password" placeholder="Password" />
+<input type="text" id="new-group-name" placeholder="New group" />
+<input type="text" id="join-group-name" placeholder="Join group" />
+<input type="text" id="message" placeholder="Type a message..." />

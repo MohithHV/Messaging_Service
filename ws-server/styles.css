@@ -1,0 +1,181 @@
+/* General Styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #e5ddd5; /* Light background similar to WhatsApp */
+    margin: 0;
+    padding: 10px; /* Reduced padding */
+}
+
+/* Header */
+h1 {
+    font-size: 22px; /* Reduced title size */
+    color: #25d366; /* WhatsApp green color */
+    text-align: center;
+    margin-bottom: 10px; /* Reduced margin */
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="password"] {
+    width: 45%;
+    padding: 10px; /* Reduced padding */
+    margin: 20px 0; /* Reduced margin */
+    border: 1px solid #ccc;
+    border-radius: 20px; /* Rounded corners */
+    font-size: 18px; /* Reduced font size */
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #25d366; /* Green border on focus */
+}
+
+/* Buttons */
+button {
+    width: 10%;
+    padding: 10px; /* Reduced padding */
+    margin: 10px 0; /* Reduced margin */
+    border: none;
+    border-radius: 20px;
+    background-color: #25d366; 
+    color: white;
+    font-size: 18px; /* Reduced font size */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1ebc57; /* Darker green on hover */
+}
+
+/* Logged In User */
+#logged-in-user {
+    font-weight: bold;
+    color: #333; /* Dark color for readability */
+    margin-bottom: 10px; /* Reduced margin */
+    font-size: 18px; /* Reduced font size */
+}
+
+/* Chat Section */
+#chat {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px; /* Reduced padding */
+    height: 300px; /* Adjust height as necessary */
+    overflow-y: auto;
+    background-color: white; /* White background for chat area */
+}
+
+    /* New styles for selected user title */
+#group-message {
+    font-weight: bold; /* Existing style */
+    margin-top: 10px; /* Existing style */
+    margin-bottom: 20px; /* Add margin below to create gap with messages */
+}
+
+/* Message Styles */
+#chat div {
+    padding: 6px; /* Reduced padding */
+    border-radius: 10px;
+    margin-bottom: 8px; /* Reduced margin */
+    position: relative;
+    font-size: 18px; /* Reduced font size */
+}
+
+#chat-message {
+    font-family: 'Arial', sans-serif; /* Update font */
+    color: #333; /* Dark gray font color for messages */
+    background-color: #f9f9f9; /* Light background for messages */
+    padding: 10px; /* Padding around messages */
+    border-radius: 5px; /* Rounded corners */
+    margin: 5px 0; /* Margin between messages */
+    max-width: 80%; /* Limit width of messages */
+}
+
+#chat div.sender {
+    background-color: #dcf8c6; /* Light green for sent messages */
+    align-self: flex-end; /* Align to the right */
+}
+
+#chat div.receiver {
+    background-color: #f1f0f0; /* Light gray for received messages */
+    align-self: flex-start; /* Align to the left */
+}
+
+/* User and Group List */
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px; /* Reduced margin */
+}
+
+#active-users,
+#groups {
+    width: 45%; /* Adjust width */
+    background-color: white; /* White background for lists */
+    border-radius: 10px;
+    padding: 5px; /* Reduced padding */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    overflow-y: auto; /* Enable scrolling if necessary */
+}
+
+#active-users h3,
+#groups h3 {
+    margin-top: 0;
+    color: #25d366; /* Same green color for section titles */
+    font-size: 16px; /* Reduced heading size */
+}
+
+/* User/Group Item Styles */
+.user,
+.group {
+    cursor: pointer;
+    color: #25d366; 
+    margin: 4px 0; /* Reduced margin */
+    padding: 4px; /* Added padding */
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.2s; /* Smooth hover effect */
+}
+
+.user:hover,
+.group:hover {
+    background-color: #f0f0f0; /* Light gray on hover */
+}
+
+/* Group Actions Section */
+#group-actions {
+    background-color: white; /* White background for actions */
+    padding: 10px; /* Reduced padding */
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    display: none; /* Hidden until user logs in */
+}
+
+/* Selected User/Group Title */
+#selected-user-title {
+    font-weight: bold;
+    margin-top: 10px; /* Reduced margin */
+    color: #333;
+    font-size: 14px; /* Reduced font size */
+}
+#call-controls {
+    margin-top: 10px;
+}
+
+#call-controls button {
+    margin-right: 5px;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column; /* Stack on smaller screens */
+        width: 100%;
+    }
+
+    #active-users, #groups {
+        width: 100%; /* Full width on mobile */
+    }
+}
+
