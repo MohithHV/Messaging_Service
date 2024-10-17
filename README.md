@@ -1,3 +1,8 @@
+## My details
+## Name: Mohith H V
+## University: IIT Madras
+## Department: Biotechnology
+
 ## Setup Instructions
 1. Clone the Repository:
   git clone https://github.com/your-username/your-repo.git
