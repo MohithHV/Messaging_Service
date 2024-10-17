@@ -29,5 +29,5 @@
   ```
   node server.js
   ```
-* Access the Client:
+7. Access the Client:
   Open client/index.html in your browser.
