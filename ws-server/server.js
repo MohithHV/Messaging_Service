@@ -4,8 +4,8 @@ import mysql from 'mysql2/promise';
 // Create a connection to the MySQL database
 const db = await mysql.createConnection({
   host: 'localhost',
-  user: 'root', // Replace with your MySQL username
-  password: 'Mohith@2003', // Replace with your MySQL password
+  user: 'username', // Replace with your MySQL username
+  password: 'password', // Replace with your MySQL password
   database: 'messaging_service'
 });
 
