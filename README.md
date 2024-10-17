@@ -2,11 +2,13 @@
 1. Clone the Repository:
   git clone https://github.com/your-username/your-repo.git
   cd your-repo
-2.Install Dependencies:
+
+2. Install Dependencies:
   npm install
-3.Setup the Database:
+  
+3. Setup the Database:
   Import the SQL file into MySQL Workbench:
-4.MySQL Workbench.
+4. MySQL Workbench.
   Navigate to Database > database.sql
   Create a new database and run the SQL schema to initialize the tables.
 5. Modify the Database Credentials:
